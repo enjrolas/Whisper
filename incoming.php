@@ -8,7 +8,7 @@ if(isset($_REQUEST['Digits']))  //the user made a choice
   {
     $digits=$_REQUEST['Digits'];
     if($digits=='1'){
-      echo "<Say>Record a note. Hang up when you're done</Say>";
+      echo "<Say>Record a note.</Say>";
       echo "<Record transcribe='true' transcribeCallback='transcription.php'/>";
     }
     else if($digits=='2')
@@ -68,8 +68,7 @@ echo "</Response> ";
 
 function playIntro()
 {
-  echo "<Say>Whisper is a fast, simple scratch pad for voice notes.  You can record notes for yourself, or listen to notes you've saved for yourself.  
-Your notes are tied to your phone number, so only you can access them.</Say>";
+  echo "<Say>Whisper is a fast, simple scratch pad for voice notes.  You can record notes for yourself and listen to notes you've left for yourself.</Say>";
 }
 
 ?>
