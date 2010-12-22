@@ -1,1 +1,15 @@
-this is a test
+Whisper is a quick way to leave voice notes for yourself from any phone.  Presently, there are two modes of operation:  
+recording a note and listening to your notes.  It should take less than five seconds to start recording a note:  Dial the 
+number, press '1', and you're recording a note.  Just hang up when you're done--everything you said is automatically recorded, 
+timestamped and associated with your phone number.  To listen to your notes, call the number and press '2.'  Your notes 
+are played back, most recent note first.
+
+The system is built on twilio (twilio.com).  When a user calls the  Twilio phone number (+1 617 237 6243), Twilio runs the incoming.php script, which 
+handles the voice menu, recording and playback.  Transcription.php is in there to store transcriptions of the notes in the database along with the 
+recording URLs, but there's no good way to access that feature, so it's ignorable for now.  And connect.php just connects to the database.  Details of the
+Database schema are in the file 'database schema.pdf.'  All that matters is the 'messages' table.
+
+To Do:
+Add an interface to allow skipping forward and backward through notes and replaying notes.
+See if anyone other than me wants to use this thing
+passcode to allow mutliple phones per account
