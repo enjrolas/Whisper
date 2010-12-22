@@ -31,7 +31,7 @@ date_format(timestamp, '%W the %D') as 'formattedDate'
 	    $printedRow=print_r($row, true);
 	    echo "<Say>$date</Say>";
 	    echo "<Play>$url</Play>";
-	    $query=$query . "\n here's a line:  $date $url";
+	    $query=$query . "\n here's a line:  $date $url"; 
 	    $query=$query . "\n $printedRow";
 	  }
 	echo "<Say>That's all your notes</Say>
